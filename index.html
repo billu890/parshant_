@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> 💕 Happy Birthday Anushka ❤️ </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #fffde7, #ffe57f);
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .start-screen {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fffde7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      text-align: center;
+    }
+
+    .start-screen button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #ffb300;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .container {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    .card {
+      background:  linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+              url('image.png');
+             /* linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('image.png'); */
+
+      background-size: cover;
+      background-position: center;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      animation: float 4s ease-in-out infinite;
+      max-width: 500px;
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffb300;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #444;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 15px;
+    }
+
+    .cake {
+      font-size: 60px;
+      margin-bottom: 20px;
+      animation: bounce 1.5s infinite;
+    }
+
+    .sunflower {
+      font-size: 40px;
+      margin: 10px;
+      animation: rotate 6s linear infinite;
+    }
+
+    .balloon {
+      position: absolute;
+      top: 100%;
+      font-size: 40px;
+      animation: rise 8s linear infinite;
+    }
+
+    .balloon:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .balloon:nth-child(2) { left: 30%; animation-delay: 2s; }
+    .balloon:nth-child(3) { left: 50%; animation-delay: 4s; }
+    .balloon:nth-child(4) { left: 70%; animation-delay: 6s; }
+    .balloon:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+    .images {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes rise {
+      0% { top: 100%; opacity: 0; }
+      20% { opacity: 1; }
+      100% { top: -10%; opacity: 0; }
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .date {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tap to Start Screen -->
+  <div class="start-screen" id="startScreen">
+    <h1> 😍 Happy Birthday Anushka 😍</h1>
+    <button onclick="startExperience()"> 😘 Suprise 😍 🎵</button>
+  </div>
+
+  <!-- Balloons -->
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+
+  <!-- Main Content -->
+  <div class="container" id="mainContent">
+    <div class="card">
+      <div class="sunflower">🌹</div>
+      <div class="cake">🎂</div>
+      <h1>Happy Birthday</h1>
+      <h2>Anushka</h2>
+      
+
+
+Happy Birthday Princess👸 
+💓
+🫴
+Im sending thousands of blessing and love ❤️ 
+Love you so much sweety.
+I know I'm not physically with you right now, but my hearts always urge to spend happy time on your birthday.
+Keep smiling babe because God blessed with you a great smile 😊
+ 🌻💖🎂</p>
+      <div class="date">🌟 16 April🌟</div>
+      <div class="images">
+        <img src="image copy.png" alt="Gift">
+        <img src="https://i.pinimg.com/736x/c5/39/f6/c539f6b54af3bf5d0e4267a13bf6135d.jpg" alt="Doll">
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bdayMusic" loop>
+    <source src="parshant.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function startExperience() {
+      document.getElementById('startScreen').style.display = 'none';
+      document.getElementById('mainContent').style.display = 'flex';
+      var music = document.getElementById('bdayMusic');
+      music.play().catch(error => {
+        console.log('Audio play failed:', error);
+      });
+    }
+  </script>
+
+</body>
+</html>
